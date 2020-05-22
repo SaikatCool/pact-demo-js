@@ -39,7 +39,7 @@ describe('DogService', () => {
       description: 'Lorem ipsum'
   }
     ];
-    dogService.getDogs().subscribe((response) => {
+    dogService.getDogs(environment.api_end_point).subscribe((response) => {
       expect(response).toEqual(data);
     });
     const req = httpTestingController.expectOne(environment.api_end_point + '/dogs');

@@ -12,7 +12,7 @@ export class DogService {
   constructor(private http: HttpClient) {
   }
 
-  getDogs(): Observable<Dog[]>{
-    return this.http.get<Dog[]>(environment.api_end_point + '/dogs');
+  getDogs(baseUrl: string): Observable<Dog[]>{
+    return this.http.get<Dog[]>(baseUrl + '/dogs');
   }
 }
