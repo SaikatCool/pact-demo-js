@@ -5,12 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest",
+    "test:pact": "npx jest pact.spec.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@pact-foundation/pact": "^9.11.0",
     "cors": "^2.8.5",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
   }
 }

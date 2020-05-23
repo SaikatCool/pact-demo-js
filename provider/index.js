@@ -7,7 +7,7 @@ app.use(cors());
 
 app.listen(3000, () => console.log("provider is running!"));
 
-app.get('/data-service/dogs', (req, res) => {
+app.get('/dogs', (req, res) => {
     console.log(req.headers);
     fs.readFile('./dogs.json', (err, json) => {
         let obj = JSON.parse(json);
