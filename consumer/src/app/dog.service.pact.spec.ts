@@ -2,8 +2,6 @@ import {TestBed} from '@angular/core/testing';
 import {HttpClientModule} from '@angular/common/http';
 import {PactWeb, Matchers} from '@pact-foundation/pact-web';
 import { DogService } from './dog.service';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
-import {Pact} from '@pact-foundation/pact';
 
 describe('Dog service contract tests', () => {
   let provider: PactWeb;
